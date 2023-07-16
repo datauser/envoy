@@ -1,9 +1,9 @@
 name: mobile_traffic_director
 
 on:
-  schedule:
-  # Once a day at midnight.
-  - cron: '0 0 * * *'
+  push:
+    branches:
+    - main
   # Allows manual triggering in the UI. Makes it easier to test.
   workflow_dispatch:
 
