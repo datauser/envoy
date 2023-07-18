@@ -1,10 +1,13 @@
 name: mobile_release
 
 on:
-  workflow_dispatch:
-  schedule:
+  push:
+    branches:
+    - main
+  # workflow_dispatch:
+  # schedule:
   # Mondays at 1pm UTC (8am EST)
-  - cron: "0 13 * * 1"
+  # - cron: "0 13 * * 1"
 
 jobs:
   android_release_artifacts:
