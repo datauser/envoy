@@ -25,19 +25,19 @@ aio-api-bazel==0.0.2 \
     --hash=sha256:56e36463d236e477b7e282f2d870185a0b978b50e2c3803c1ebf8b8ac4b18f5b \
     --hash=sha256:d3f563b7698e874437d80538a89dd4d79bc37de2e850c846330ae456e3f21dcc
     # via -r requirements.in
-aio-api-github==0.2.4 \
-    --hash=sha256:ccbc7c6c61b25994e87474d78c48549e9fbc98c2cc04314b50b80ba1f40fd521 \
-    --hash=sha256:eccfccd1503f50384de3f6526bd780ca02107cb440a666b2c1ab978d99c7db5e
+aio-api-github==0.2.10 \
+    --hash=sha256:2563ad2cd219352a7933b78190c17ab460b503b437bec348a738c0f804adf45f \
+    --hash=sha256:75e17073e9e03386d719d1af355f599c16d68345992eaa97aebfa6159b07ad02
     # via
     #   envoy-base-utils
     #   envoy-dependency-check
-aio-api-nist==0.0.3 \
-    --hash=sha256:3465d25e4ffdec35d824960e6d68fbff070f823fde55a40fa4eb53a7fd7d18ca \
-    --hash=sha256:5ecf9f32e19ad8804bba1358dde93d1008029335009541dadc69c3823241b382
+aio-api-nist==0.0.4 \
+    --hash=sha256:1f2909d60ed4fdb3a3ffc37ad6012666f34078b71648394be91f5e67bbf8b6ca \
+    --hash=sha256:c948ee597b9e7cda7982e17bc4aca509b8aa68510899b42e2d382c10fb0d6f89
     # via envoy-dependency-check
-aio-core==0.10.0 \
-    --hash=sha256:57e2d8dd8ee8779b0ebc2e2447492c0db8d7ed782e9ad1bb2662593740751acb \
-    --hash=sha256:cb00d530b1e16228b36174c23d446c66e3f2a50ef91aa527c0e58a654316f635
+aio-core==0.10.5 \
+    --hash=sha256:ba512132df47514a15930b89835ba1ef13522b7e31ec83a3b0622b7431f3f42e \
+    --hash=sha256:d8486a0115ade8e0362783b8e7cd988368766d0d911c62cb73b716bfe1f50a92
     # via
     #   aio-api-bazel
     #   aio-api-github
@@ -439,9 +439,9 @@ envoy-code-check==0.5.4 \
     --hash=sha256:b3c338a0e607960ea75eb8298e786548d317655ac4c89d89b259395684eaf134 \
     --hash=sha256:ec919ea1e5523c5ad669f6601bb58c8da77bc1891c8846950add3b563c629ac5
     # via -r requirements.in
-envoy-dependency-check==0.1.8 \
-    --hash=sha256:ac9820e446bb44e05121e5c93c210f40ca37076580b0d082da2c63e7784c338a \
-    --hash=sha256:e92272ca1f4d850d3eb3bde3c22cff39c103e7850fbda8d1686814bfc8c45338
+envoy-dependency-check==0.1.13 \
+    --hash=sha256:4337b9c4129ae723dc92f70733b167a8dde187368d873687c6c54732d6fb5e48 \
+    --hash=sha256:795e885eccd072d7878dc8ce11fe9f84761f0e449603e583fdab5e9e17111af2
     # via -r requirements.in
 envoy-distribution-distrotest==0.0.10 \
     --hash=sha256:83e912c48da22eb3e514fc1142247d33eb7ed0d59e94eca2ffbd178a26fbf808 \
@@ -778,9 +778,9 @@ importlib-metadata==6.6.0 \
     --hash=sha256:43dd286a2cd8995d5eaef7fee2066340423b818ed3fd70adf0bad5f1fac53fed \
     --hash=sha256:92501cdf9cc66ebd3e612f1b4f0c0765dfa42f0fa38ffb319b6bd84dd675d705
     # via yapf
-jinja2==3.1.2 \
-    --hash=sha256:31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852 \
-    --hash=sha256:6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61
+jinja2==3.1.5 \
+    --hash=sha256:8fefff8dc3034e27bb80d67c671eb8a9bc424c0ef4c0826edbff304cceff43bb \
+    --hash=sha256:aba0f4dc9ed8013c424088f68a5c226f7d6097ed89b246d7749c2ec4175c6adb
     # via
     #   -r requirements.in
     #   envoy-base-utils
@@ -1230,7 +1230,7 @@ sphinxcontrib-httpdomain==1.8.1 \
     --hash=sha256:21eefe1270e4d9de8d717cc89ee92cc4871b8736774393bafc5e38a6bb77b1d5 \
     --hash=sha256:6c2dfe6ca282d75f66df333869bb0ce7331c01b475db6809ff9d107b7cdfe04b
     # via envoy-docs-sphinx-runner
-sphinxcontrib.jquery @ https://github.com/sphinx-contrib/jquery/archive/refs/tags/v3.0.0.zip \
+sphinxcontrib-jquery @ https://github.com/sphinx-contrib/jquery/archive/refs/tags/v3.0.0.zip \
     --hash=sha256:562ad9ac0ac3d8f04a363eb3507ae4b2b856aa04aabab6df7543530fafb849ca
     # via
     #   -r requirements.in
@@ -1266,6 +1266,18 @@ trycast==1.0.0 \
     # via
     #   aio-core
     #   envoy-base-utils
+types-orjson==3.6.2 \
+    --hash=sha256:22ee9a79236b6b0bfb35a0684eded62ad930a88a56797fa3c449b026cf7dbfe4 \
+    --hash=sha256:cf9afcc79a86325c7aff251790338109ed6f6b1bab09d2d4262dd18c85a3c638
+    # via aio-core
+types-pytz==2024.2.0.20241221 \
+    --hash=sha256:06d7cde9613e9f7504766a0554a270c369434b50e00975b3a4a0f6eed0f2c1a9 \
+    --hash=sha256:8fc03195329c43637ed4f593663df721fef919b60a969066e22606edf0b53ad5
+    # via aio-core
+types-pyyaml==6.0.12.20241230 \
+    --hash=sha256:7f07622dbd34bb9c8b264fe860a17e0efcad00d50b5f27e93984909d9363498c \
+    --hash=sha256:fa4d32565219b68e6dee5f67534c722e53c00d1cfc09c435ef04d7353e1e96e6
+    # via aio-core
 typing-extensions==4.6.3 \
     --hash=sha256:88a4153d8505aabbb4e13aacb7c486c2b4a33ca3b3f807914a9b4c844c471c26 \
     --hash=sha256:d91d5919357fe7f681a9f2b5b4cb2a5f1ef0a1e9f59c4d8ff0d3491e05c0ffd5
